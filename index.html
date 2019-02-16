@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Get Artists
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+</head>
+<body>
+    <main>
+       <div class="container-btn center">
+            <a href="#" class="btn">search artist</a>
+       </div>  
+       <!--  -->
+       <!-- form -->
+       <form id="getartist" class="form-main center" action="" method="POST">
+           <span class="close">
+                <i class="fa fa-close"></i> 
+           </span>
+           <div class="form-outer">
+                    <div>
+                        <label for="name">Name</label> <input type="text" name="artist_name" id="artist" placeholder="enter name" required>
+                    </div> 
+                    <div> 
+                        <label for="tracks">No. of Tracks</label> <input type="text" id="track" name="tracks" pattern="[1-4]" maxlength="4" placeholder ="max 4 are allowed" required>
+                    </div>
+                    <div><input type="submit" class="btn sub" value="submit"></div>
+           </div>
+
+       </form>  
+       <!--  -->    
+       <!-- tabs -->
+       <div id="tabs"></div>
+    </main>
+
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+
+</body>
+</html>
