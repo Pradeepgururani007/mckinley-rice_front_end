@@ -1,0 +1,135 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    -webkit-appearance: none; 
+       -moz-appearance: none; 
+            appearance: none;
+}
+input[type="text"] {
+    border: 1px solid #ebebeb;
+    padding: 8px;
+}   
+input[type="submit"] {
+    border: 1px solid transparent;
+}
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+}
+/*  */
+
+.btn{
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    border-radius: 3px;
+    background: #0ABDE3;
+}
+.sub{
+    text-transform: capitalize;
+}
+#getartist {
+    background: #fff;
+    border: 1px solid #07B2D7;
+    width: 50%;
+    border-radius: 5px;
+}
+.form-main,.infotabs{
+    visibility: hidden;
+}
+.form-main.on,.infotabs.on{
+    visibility: visible;
+}
+#getartist .close {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+    font-size: 20px;
+    color: #07B2D7;
+}       
+.form-outer {
+    padding: 50px;
+}
+.form-outer div {
+    margin: 15px;
+}
+.form-outer div:last-of-type{
+    text-align: center;
+    margin-top: 20px;
+}
+.form-outer div label {
+    color: #494949;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 20px;
+}
+.infotabs {
+    width: 75%;
+    text-align: center;
+}
+.tab-nav a{
+    color: #07B2D7;
+    border: 1px solid #07B2D7;
+}
+.tab-nav a:not(:last-of-type) {
+    border-right: none;
+}
+.tab-nav a.active {
+    display: inline-block;
+    background: #07B2D7;
+    padding: 20px 0;
+    color: #fff;
+    position: relative;
+}
+.tab-nav a.active::after{
+    position: abolute;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    bottom: -1px;
+    right: 0;
+}
+.link a {
+    display: inline-block;
+    width: 25%;
+    padding: 20px 0px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+}
+.tab-content {
+	border: 1px solid #07B2D7;
+	background: #fff;
+	padding: 50px;
+}
+.tab-content div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.tab-content div span {
+    display: inline-block;
+    padding: 0 20px;
+}
+.tab-content div .img {
+	padding: 0;
+}
